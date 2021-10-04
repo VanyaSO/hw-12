@@ -1,0 +1,233 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  color: black;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+p {
+  font-size: var(--font-size-md);
+}
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+:root {
+  --transition:.3s;
+  --font-size-md:16px;
+  --font-size-lg: 42px;
+}
+
+header .header__block {
+  padding: 30px 0px 110px;
+  background: #f6f2f2;
+}
+header .header__block .header__contact {
+  background: #313030;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header .header__block .header__contact nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+header .header__block .header__contact nav ul li {
+  padding: 33px 0px;
+  transition: var(--transition);
+  cursor: pointer;
+}
+header .header__block .header__contact nav ul li:hover {
+  background: red;
+}
+header .header__block .header__contact nav ul li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0px 25px;
+}
+
+main .about-us__block {
+  background: #f6f2f2;
+  padding: 0px 0px 110px;
+  margin-bottom: 110px;
+}
+main .about-us__block .about-us__items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+main .about-us__block .about-us__items .about-us__txt {
+  width: 50%;
+  max-width: 520px;
+}
+main .about-us__block .about-us__items .about-us__txt h3 {
+  text-transform: uppercase;
+  font-size: 60px;
+  margin-bottom: 40px;
+}
+main .about-us__block .about-us__items .about-us__txt p {
+  font-size: var(--font-size-md);
+  padding-bottom: 50px;
+}
+main .about-us__block .about-us__items .about-us__txt .button__about-us {
+  padding: 20px 60px;
+  background: red;
+  max-width: 225px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+}
+main .about-us__block .about-us__items .about-us__txt .button__about-us:hover {
+  background: #ea1b1b;
+}
+main .about-us__block .about-us__items .about-us__txt .button__about-us a {
+  color: white;
+  font-size: var(--font-size-md);
+}
+main .about-us__block .about-us__items .about-us__video {
+  weight: 50%;
+  box-shadow: 0px 0px 40px black;
+}
+
+main .services__block {
+  padding-bottom: 50px;
+}
+main .services__block .services__wrapper {
+  border-bottom: #9fa9a9 solid 2px;
+}
+main .services__block .services__wrapper .services__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 0 60px;
+}
+main .services__block .services__wrapper .services__items .services__txt-info {
+  width: 50%;
+  max-width: 520px;
+}
+main .services__block .services__wrapper .services__items .services__txt-info h3 {
+  font-size: var(--font-size-lg);
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+main .services__block .services__wrapper .services__items .services__txt-info p {
+  margin-bottom: 60px;
+}
+main .services__block .services__wrapper .services__items .services__txt-info .button__services {
+  padding: 20px 60px;
+  max-width: 225px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  border: solid 2px red;
+}
+main .services__block .services__wrapper .services__items .services__txt-info .button__services a {
+  color: red;
+}
+main .services__block .services__wrapper .services__items .services__enumeration__item {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main .services__block .services__wrapper .services__items .services__enumeration__item .services__enumeration {
+  width: 50%;
+  max-width: 290px;
+  padding: 0 0 50px;
+}
+main .services__block .services__wrapper .services__items .services__enumeration__item .services__enumeration img {
+  max-width: 40px;
+  padding: 0 0 30px;
+}
+main .services__block .services__wrapper .services__items .services__enumeration__item .services__enumeration h3 {
+  padding: 0 0 20px;
+}
+
+/*# sourceMappingURL=index.css.map */
