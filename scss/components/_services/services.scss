@@ -1,6 +1,6 @@
 main{
   .services__block{
-    padding-bottom: 50px;
+    padding-bottom: 40px;
 
     .services__wrapper{
       border-bottom: #9fa9a9 solid 2px;
@@ -16,8 +16,7 @@ main{
           max-width: 520px;
 
           h3{
-            font-size: var(--font-size-lg);
-            text-transform: uppercase;
+            @extend %style_h3;
             margin-bottom: 50px;
           }
 
@@ -26,13 +25,14 @@ main{
           }
 
           .button__services {
-            padding: 20px 60px;
-            max-width: 225px;
-            text-align: center;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: bold;
+            @extend %bottom;
             border: solid 2px red;
+            transition: var(--transition) ;
+
+            &:hover{
+              background: #fcefef;
+              color: red;
+            }
 
             a{
               color: red;

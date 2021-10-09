@@ -1,0 +1,27 @@
+%style_h3{
+  font-size: var(--font-size-lg);
+  text-transform: uppercase;
+}
+
+%bottom{
+  padding: 20px 60px;
+  max-width: 220px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+%display{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+%red-line{
+  content: '';
+  display: inline-block;
+  width: 130px;
+  height: 2px;
+  margin: 0 auto;
+  background: $line-color;
+}
