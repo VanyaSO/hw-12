@@ -84,12 +84,12 @@ select {
   --font-size-lg: 42px;
 }
 
-main .our-team__block .our-team__information .information h3, main .title-txt-line h3, main .services__block .services__wrapper .services__items .services__txt-info h3 {
+main .contact__block .contact__items .title-txt-line h3, main .subscription__block .subscription__items .title-txt h3, main .our-team__block .our-team__information .information h3, main .title-txt-line h3, main .services__block .services__wrapper .services__items .services__txt-info h3 {
   font-size: var(--font-size-lg);
   text-transform: uppercase;
 }
 
-main .services__block .services__wrapper .services__items .services__txt-info .button__services, main .about-us__block .about-us__items .about-us__txt .button__about-us {
+main .subscription__block .subscription__items .subscription .button__subscription, main .services__block .services__wrapper .services__items .services__txt-info .button__services, main .about-us__block .about-us__items .about-us__txt .button__about-us {
   padding: 20px 60px;
   max-width: 220px;
   text-align: center;
@@ -98,18 +98,25 @@ main .services__block .services__wrapper .services__items .services__txt-info .b
   font-weight: bold;
 }
 
-main .gallery__images {
+main .contact__block .contact__items .contact__form form, main .contact__block .contact__items .row, main .gallery__images {
   display: flex;
   flex-wrap: wrap;
 }
 
-main .title-txt-line:after {
+main .contact__block .contact__items .title-txt-line:after, main .title-txt-line:after {
   content: "";
   display: inline-block;
   width: 130px;
   height: 2px;
   margin: 0 auto;
   background: red;
+}
+
+main .contact__block .contact__items .contact__form-massage textarea, main .contact__block .contact__items .contact__form-field input {
+  background-color: silver;
+  border: none;
+  border-radius: 10px;
+  padding: 20px 40px;
 }
 
 * {
@@ -358,6 +365,140 @@ main .our-team__block .our-team__information .information .gallery__information 
 
 main .subscription__block {
   background-color: #f5f0dd;
+  padding: 140px 0;
+}
+main .subscription__block .subscription__items .title-txt {
+  text-align: center;
+}
+main .subscription__block .subscription__items .title-txt h3 {
+  margin-bottom: 40px;
+  color: white;
+}
+main .subscription__block .subscription__items .title-txt p {
+  color: white;
+  margin: 0 auto 60px;
+}
+main .subscription__block .subscription__items .subscription {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+main .subscription__block .subscription__items .subscription .button__subscription {
+  background: red;
+  transition: var(--transition);
+  text-transform: uppercase;
+}
+main .subscription__block .subscription__items .subscription .button__subscription:hover {
+  background: #ea1b1b;
+}
+main .subscription__block .subscription__items .subscription .button__subscription a {
+  color: white;
+  font-size: var(--font-size-md);
+}
+main .subscription__block .subscription__items .subscription input {
+  padding: 20px 35px;
+  width: 520px;
+  margin-right: 22px;
+  border: none;
+  border-radius: 5px;
+}
+main .subscription__block .subscription__items .subscription input:focus {
+  border: none;
+  background-color: #f0f2f2;
+}
+
+main .contact__block {
+  padding-top: 105px;
+  padding-bottom: 110px;
+}
+main .contact__block .contact__items .title-txt-line {
+  justify-content: start;
+  max-width: 722px;
+  text-align: start;
+  padding: 0;
+}
+main .contact__block .contact__items .title-txt-line h3 {
+  margin-bottom: 50px;
+}
+main .contact__block .contact__items .title-txt-line p {
+  max-width: 720px;
+  padding: 0;
+  margin: 0 0 58px;
+}
+main .contact__block .contact__items .row {
+  margin-top: 75px;
+}
+main .contact__block .contact__items .contact__form {
+  width: 60%;
+}
+main .contact__block .contact__items .contact__form-field {
+  width: 50%;
+}
+main .contact__block .contact__items .contact__form-field:first-child {
+  padding-right: 27px;
+}
+main .contact__block .contact__items .contact__form-field:nth-child(2) {
+  padding-left: 27px;
+}
+main .contact__block .contact__items .contact__form-field input {
+  width: 100%;
+  margin-bottom: 45px;
+}
+main .contact__block .contact__items .contact__form-massage {
+  width: 100%;
+}
+main .contact__block .contact__items .contact__form-massage textarea {
+  width: 100%;
+  height: 250px;
+  resize: none;
+}
+main .contact__block .contact__items .contact__form .button__form {
+  margin-top: 45px;
+  width: 100%;
+}
+main .contact__block .contact__items .contact__form .button__form button {
+  padding: 20px 60px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  background: red;
+  transition: var(--transition);
+  text-transform: uppercase;
+  width: 100%;
+  color: white;
+}
+main .contact__block .contact__items .contact__form .button__form button:hover {
+  background: #ea1b1b;
+}
+main .contact__block .contact__items .contact__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: calc(40% - 100px);
+  margin-left: 100px;
+  background-color: #333;
+}
+main .contact__block .contact__items .contact__info p, main .contact__block .contact__items .contact__info h3 {
+  color: white;
+}
+
+footer .footer {
+  background-color: #4c4c4c;
+  padding: 57px;
+}
+footer .footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  text-align: center;
+}
+footer .footer p {
+  color: #b8b8b8;
+}
+footer .footer .img {
+  display: flex;
 }
 
 /*# sourceMappingURL=index.css.map */

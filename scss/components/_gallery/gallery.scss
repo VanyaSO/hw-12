@@ -53,8 +53,8 @@ main {
     margin-left: -10px;
   }
     .gallery__item {
-      width: $content-width / 4;
-      height: $content-width / 4;
+      width:calc(1250px / 4);
+      height:calc(1250px / 4);
       padding: 0 10px 20px;
 
       .gallery__item-img{
