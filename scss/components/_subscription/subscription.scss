@@ -1,47 +1,45 @@
-main{
-  .subscription__block {
-    background-color: $background-color-images;
-    padding: 140px 0;
-    .subscription__items{
-      .title-txt{
-        text-align: center;
-        h3{
-          @extend %style_h3;
-          margin-bottom: 40px;
-          color: white;
-        }
-        p{
-          color: white;
-          margin: 0 auto 60px;
-        }
+.subscription__block {
+  background-color: $background-color-images;
+  padding: 140px 0;
+  .subscription__items{
+    .title-txt{
+      text-align: center;
+      h3{
+        @extend %style_h3;
+        margin-bottom: 40px;
+        color: white;
       }
-      .subscription{
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        .button__subscription{
-          @extend %bottom;
-          background: red;
-          transition: var(--transition);
-          text-transform: uppercase;
-          &:hover{
-            background: #ea1b1b;
-          }
-          a{
-            color:white;
-            font-size: var(--font-size-md);
-          }
-       }
-        input{
-          padding: 20px 35px;
-          width: 520px;
-          margin-right: 22px;
+      p{
+        color: white;
+        margin: 0 auto 60px;
+      }
+    }
+    .subscription{
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      .button__subscription{
+        @extend %bottom;
+        background: red;
+        transition: $transition;
+        text-transform: uppercase;
+        &:hover{
+          background: #ea1b1b;
+        }
+        a{
+          color:white;
+          font-size: $font-size-md;
+        }
+     }
+      input{
+        padding: 20px 35px;
+        width: 520px;
+        margin-right: 22px;
+        border: none;
+        border-radius: 5px;
+        &:focus{
           border: none;
-          border-radius: 5px;
-          &:focus{
-            border: none;
-            background-color: #f0f2f2;
-          }
+          background-color: #f0f2f2;
         }
       }
     }

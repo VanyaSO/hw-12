@@ -1,9 +1,10 @@
-:root{
-  --transition:.3s;
-  --font-size-md:16px;
-  --font-size-lg: 42px;;
-}
-
-$line-color:red;
+$content-width: 1250px;
+$content-widthXl:1100px;
+$content-widthLg:992px;
+$content-widthMd:767px;
+$content-widthSm:500px;
+$transition: .3s;
+$font-size-md: 16px;
+$font-size-lg: 42px;
+$line-color: red;
 $background-color-images: #f5f0dd;
-$content-width:1250px;

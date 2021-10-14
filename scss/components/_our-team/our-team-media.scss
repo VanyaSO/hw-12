@@ -1,0 +1,102 @@
+@media (max-width: 1250px) {
+  .our-team__block {
+    .our-team__information {
+      .main__photo {
+        width: 30%;
+      }
+
+      .information {
+        width: 70%;
+      }
+    }
+  }
+}
+
+//1100px
+@media (max-width: $content-widthXl) {
+  .our-team__block {
+    .our-team__information {
+      .main__photo {
+        width: 35%;
+      }
+      .information{
+        width: 65%;
+        .gallery__information{
+          .gallery__info-item{
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//992px
+@media (max-width: $content-widthLg){
+  .our-team__block {
+    .title-txt-line{
+      justify-content: center;
+      max-width: 445px;
+      text-align: center;
+      margin: 0 auto;
+    }
+    .our-team__information {
+      flex-direction: column;
+      .main__photo {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto 30px;
+      }
+      .information {
+        width: 100%;
+      }
+    }
+  }
+}
+
+//767px
+@media (max-width: $content-widthMd){
+  .our-team__block {
+    .our-team__information{
+      text-align: center;
+      .information{
+        text-align: center;
+        ul{
+          li{
+            margin: 0 auto;
+          }
+        }
+        .gallery__information{
+          flex-wrap: wrap;
+          .gallery__info-item{
+            margin: 0 5px 10px 5px;
+            width: 48%;
+            &:last-child{
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//500px
+@media (max-width: $content-widthSm){
+  .our-team__block {
+    .our-team__information{
+      .information{
+        .gallery__information{
+          flex-direction: column;
+          width: 100%;
+          .gallery__info-item{
+            margin: 0 auto 10px;
+            width: 200px;
+            &:last-child{
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}

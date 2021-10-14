@@ -1,67 +1,62 @@
-main{
-  .services__block{
-    padding-bottom: 40px;
+.services__block{
+  padding-bottom: 40px;
 
-    .services__wrapper{
-      border-bottom: #9fa9a9 solid 2px;
+  .services__wrapper{
+    border-bottom: #9fa9a9 solid 2px;
 
-      .services__items{
+    .services__items{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 0 0 60px;
+
+      .services__txt-info{
+        width: 50%;
+        max-width: 520px;
+
+        h3{
+          @extend %style_h3;
+          margin-bottom: 50px;
+        }
+
+        p{
+          margin-bottom: 60px;
+        }
+
+        .button__services {
+          @include btn(none,solid 2px red);
+          &:hover{
+            background: #fcefef;
+            color: red;
+          }
+
+          a{
+            color: red;
+          }
+        }
+      }
+
+      .services__enumeration__item{
+        width: 50%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding: 0 0 60px;
 
-        .services__txt-info{
+        .services__enumeration{
           width: 50%;
-          max-width: 520px;
+          max-width: 290px;
+          padding: 0 0 50px;
+
+          img{
+            max-width: 40px;
+            padding: 0 0 30px;
+          }
 
           h3{
-            @extend %style_h3;
-            margin-bottom: 50px;
-          }
-
-          p{
-            margin-bottom: 60px;
-          }
-
-          .button__services {
-            @extend %bottom;
-            border: solid 2px red;
-            transition: var(--transition) ;
-
-            &:hover{
-              background: #fcefef;
-              color: red;
-            }
-
-            a{
-              color: red;
-            }
+            padding: 0 0 20px;
           }
         }
 
-        .services__enumeration__item{
-          width: 50%;
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between;
-
-          .services__enumeration{
-            width: 50%;
-            max-width: 290px;
-            padding: 0 0 50px;
-
-            img{
-              max-width: 40px;
-              padding: 0 0 30px;
-            }
-
-            h3{
-              padding: 0 0 20px;
-            }
-          }
-
-        }
       }
     }
   }

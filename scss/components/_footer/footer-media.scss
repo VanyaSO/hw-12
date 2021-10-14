@@ -1,0 +1,59 @@
+//1100px
+@media (max-width: $content-widthXl) {
+
+}
+
+//992px
+@media (max-width: $content-widthLg){
+
+}
+
+//767px
+@media (max-width: $content-widthMd){
+  footer{
+    .footer{
+      p{
+        font-size: 13px;
+      }
+      .img{
+        img{
+          margin-left: 18px;
+          max-width: 25px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 590px){
+  footer{
+    .footer{
+      p{
+        font-size: 11px;
+      }
+      .img{
+        img{
+          margin-left: 15px;
+          max-width: 20px;
+        }
+      }
+    }
+  }
+}
+
+//500px
+@media (max-width: $content-widthSm){
+  footer{
+    .footer{
+      p{
+        font-size: 8px;
+      }
+      .img{
+        img{
+          margin-left: 10px;
+          max-width: 18px;
+        }
+      }
+    }
+  }
+}

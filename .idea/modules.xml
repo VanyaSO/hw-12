@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/hw12-ushachov.iml" filepath="$PROJECT_DIR$/.idea/hw12-ushachov.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hw13-ushachov_media/.idea/hw8-ushachov__re-delivery.iml" filepath="$PROJECT_DIR$/../hw13-ushachov_media/.idea/hw8-ushachov__re-delivery.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../Front-end/site-by-layout-1/.idea/site-by-layout-1.iml" filepath="$PROJECT_DIR$/../../Front-end/site-by-layout-1/.idea/site-by-layout-1.iml" />
     </modules>
   </component>
