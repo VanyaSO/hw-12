@@ -45,30 +45,30 @@
           margin-right: 20px;
           width: 200px;
           height: 212px;
+          position:relative;
           background-color: $background-color-images;
-          position: relative;
-          display: inline-block;
           &:last-child{
             margin-right: 0;
           }
-        }
+
           .name{
-            text-align: center;
-            width: 100%;
-            height: 35px;
-            background-color: black;
-            color: white;
-            opacity:0;
-            font-size: 18px;
-            text-transform: uppercase;
+            display: none;
             position: absolute;
-            bottom: 0;
-            display: block;
-            transition: $transition;
-          }
-          .name:hover {
+            bottom:0;
+            background-color: black;
             opacity: .5;
+            width: 100%;
+            text-align: center;
+            color:white;
+            height: 30px;
           }
+
+          &:hover{
+            .name{
+              display: block;
+            }
+          }
+        }
       }
     }
   }
